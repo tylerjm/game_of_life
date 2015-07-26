@@ -12,10 +12,10 @@ import time
 import random
 
 # Global constants
-CYCLES = 150
-SEED_CHANCE = 0.4
+CYCLES = 250
+SEED_CHANCE = 0.3
 SLEEP_TIME = 0.25
-MATRIX_SIZE = 11
+MATRIX_SIZE = 20
 DEAD = ' '
 ALIVE = 'X'
 TEMP_MATRIX = [[DEAD for i in xrange(MATRIX_SIZE)] 
