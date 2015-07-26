@@ -17,7 +17,7 @@ SEED_CHANCE = 0.4
 SLEEP_TIME = 0.25
 MATRIX_SIZE = 11
 DEAD = ' '
-ALIVE = 'T'
+ALIVE = 'X'
 TEMP_MATRIX = [[DEAD for i in xrange(MATRIX_SIZE)] 
         for i in xrange(MATRIX_SIZE)]
 
@@ -60,7 +60,7 @@ def is_alive(x, y):
             if i == x and j == y:
                 continue
             # Tabulating neighbors
-            if life_matrix[i][j] == 'T':
+            if life_matrix[i][j] == ALIVE:
                 neighbors += 1
     # Calculate if cell is alive or dead
     if neighbors < 2:
